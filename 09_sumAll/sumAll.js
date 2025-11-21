@@ -1,5 +1,5 @@
 const sumAll = function(floor, ceil) {
-    if (typeof(floor) != "number" || typeof(ceil) != "number" || !Number.isInteger(floor) || !Number.isInteger(ceil) || floor < 0 || ceil < 0) {
+    if (!Number.isInteger(floor) || !Number.isInteger(ceil) || floor < 0 || ceil < 0) {
         return "ERROR";
     }
 
